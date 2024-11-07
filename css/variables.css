@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&family=Nova+Cut&display=swap");
+
+@import './theme.css';
+
+:root {
+  --yesil: #b9e73b;
+  --koyuYesil: #2b8045;
+  --orange: #ea9a05;
+  --darkblue: #181868;
+  --lightblue: #0e91d8;
+
+  /* Font */
+
+  --fug: "Fuggles", cursive;
+  --nova: "Nova Cut", system-ui;
+
+  --fontSize1: 1.5rem;
+
+  /* Tema */
+
+  --tema1: #520120;
+  --tema2: #08403e;
+  --tema3: #706513;
+  --tema4: #b57114;
+  --tema5: #962b09;
+}
+
+body {
+
+  background-color: var(--grey-4);
+  background-color: blue;
+}
+
+h1 {
+  background-color: var(--orange);
+  font-family: var(--nova);
+}
+
+p {
+  font-family: var(--nova);
+  background-color: var(--lightblue);
+  color: var(--darkblue);
+  font-size: var(--fontSize1);
+}
+
+.container {
+  border: 2px solid red;
+  width: 500px;
+  height: 300px;
+}
+
+.dark {
+  width: 150px;
+  height: 150px;
+  background-color: var(--darkblue);
+}
+
+.light {
+  width: 150px;
+  height: 150px;
+  background-color: var(--lightblue);
+}
+
+
+@media screen and (max-width:1200px){
+    body{
+        background-color: magenta;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        background-color: green;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--tema1);
+    }
+}
+
+
+
+@media screen and (max-width:360px){
+    body{
+        background-color: red;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: inherit;
+    }
+}
+
+
